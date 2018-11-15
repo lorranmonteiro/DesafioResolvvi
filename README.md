@@ -4,4 +4,4 @@ Aqui representarei o sistema requisitado.
 
 DesafioResolvvi- RubyCode - Sistema todo feito em Ruby puro
 
-DesafioResolvvi - App implementado ao Rails.
+DesafioResolvvi - Pasta do App implementado ao Rails.
