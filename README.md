@@ -1,8 +1,19 @@
-# DesafioResolvvi
-Aqui representarei o sistema requisitado.
+# Descrição
 
-Versão 1 - Apenas o código base e estabelecimento de advogados para cada cliente.
+Descrição dos arquivos:
 
-Versão 2 - Já com a alocação(aleatória) de advogados para cada cliente.
+"DesafioResolvvi - RubyCode.rb" - Sistema todo feito em Ruby puro para rodar no console
 
-Versão 3 - Projeto final. Alocação igualitária de advogados para cada cliente.
+"DesafioResolvvi" - Pasta do App implementado ao Rails.
+
+
+
+
+
+Diante então, agradeço bastaste pela atenção, Arthur! Também peço desculpas pelo número de e-mails..
+
+Já consegui finalizar a parte funcional do projeto. Já não está mais definindo de forma aleatória, diferente deste anterior que está aqui no GitHub, ainda não dei commit pra atualizar.
+
+Se possível (pois sei que seu tempo é corrido), gostaria que você me dissesse o que você sentiu falta como usuário… a interface é super simples, não sei mexer com front-end ainda, então está tudo bem básico, mas espero que seja o suficiente..
+
+Abraço, amigo!
