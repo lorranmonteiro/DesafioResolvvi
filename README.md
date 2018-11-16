@@ -2,7 +2,7 @@
 
 Descrição dos arquivos:
 
-"DesafioResolvvi" - RubyCode" - Sistema todo feito em Ruby puro
+"DesafioResolvvi - RubyCode" - Sistema todo feito em Ruby puro
 
 "DesafioResolvvi" - Pasta do App implementado ao Rails.
 
