@@ -1,10 +1,12 @@
 # DesafioResolvvi - Lorran Monteiro
 
-Aqui representarei o sistema requisitado.
+Descrição dos arquivos:
 
-DesafioResolvvi- RubyCode - Sistema todo feito em Ruby puro
+"DesafioResolvvi" - RubyCode" - Sistema todo feito em Ruby puro
 
-DesafioResolvvi - Pasta do App implementado ao Rails.
+"DesafioResolvvi" - Pasta do App implementado ao Rails.
+
+
 
 
 
