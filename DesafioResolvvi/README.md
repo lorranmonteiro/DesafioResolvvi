@@ -1,24 +1,7 @@
-# README
+Diante então, agradeço bastaste pela atenção, Arthur! Também peço desculpas pelo número de e-mails..
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Já consegui finalizar a parte funcional do projeto. Já não está mais definindo de forma aleatória, diferente deste anterior que está aqui no GitHub, ainda não dei commit pra atualizar. 
 
-Things you may want to cover:
+Se possível (pois sei que seu tempo é corrido), gostaria que você me dissesse o que você sentiu falta como usuário… a interface é super simples, não sei mexer com front-end ainda, então está tudo bem básico, mas espero que seja o suficiente..
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Abraço, amigo!
