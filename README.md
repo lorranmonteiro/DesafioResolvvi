@@ -6,11 +6,13 @@ Descrição dos arquivos:
 
 "DesafioResolvvi" - Pasta do App implementado ao Rails.
 
-Database: Postgresql
-Port: 5432
-username: postgres   password: drogon
+#Database: Postgresql
+#Port: 5432
+#username: postgres   password: drogon
 
-\n
+#
+#
+#
 
 Diante então, agradeço bastaste pela atenção, Arthur! Também peço desculpas pelo número de e-mails..
 
