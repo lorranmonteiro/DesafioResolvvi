@@ -2,9 +2,9 @@
 
 Descrição dos arquivos:
 
-"DesafioResolvvi - RubyCode.rb" - Sistema todo feito em Ruby puro para rodar no console
+- "DesafioResolvvi - RubyCode.rb": Sistema todo feito em Ruby puro para rodar no console
 
-"DesafioResolvvi" - Pasta do App implementado ao Rails.
+- "DesafioResolvvi": Pasta do App implementado ao Rails.
 
 #
 
