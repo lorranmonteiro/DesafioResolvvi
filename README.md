@@ -9,7 +9,6 @@ Descrição dos arquivos:
 Database: Postgresql --- Port: 5432 --- username: postgres --- password: drogon
 
 #
-#
 
 Diante então, agradeço bastaste pela atenção, Arthur! Também peço desculpas pelo número de e-mails..
 
