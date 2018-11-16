@@ -32,14 +32,14 @@
 
   <br><br><br><br>
 
-  <h3>Advogados Cadastrados:</h3>
+  <h3>Advogados Cadastrados: (Para fins de comparação dos desenvolvedores)</h3>
 
   <br>
 
   <!-- Lista de advogados existentes-->
   <% @lawyers.each do |lawyer| %>
 
-    <li><%= lawyer.name %> - <%= (lawyer.state).upcase %>
+    <li><%= lawyer.name %> --- <%= (lawyer.state).upcase %> ---  Posição na fila: <%= lawyer.order %> 
     <br>
 
   <% end %>

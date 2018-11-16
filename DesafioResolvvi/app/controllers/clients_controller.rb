@@ -8,24 +8,58 @@ class ClientsController < ApplicationController
     @clients = Client.all
     # Recebe todos os advogados  que podem ser usados na view index
     @lawyers = Lawyer.all
-    @states = State.all
   end
 
   # GET /clients/1
   # GET /clients/1.json
   def show
-    # Recebe todos os advogados que podem ser usados na view index
+    # Recebe todos os advogados que podem ser usados na view show
 	  @lawyers = Lawyer.all
+    @states = State.all
 
-    # Pega aleatoriamente um advogado do mesmo estado
-	  @lawyers.shuffle.each do |law|
-      # Verifica se o estado do advogado é o mesmo do cliente
-		  if law.state == (@client.state).upcase
-        # Retorna o advogado disponivel
-			  @lawyer = law
-		  end
-	  end
+    @check = 0
+    @NumLaw = 0
+    @AvailebleLawyers = []
+
+    for i in 0..@lawyers.length-1                                    
+      if ((@client.state).upcase).split == (@lawyers[i].state).split    #*clients[0] -> Deve ser o cliente     
+                                                                        # cadastrado       
+          @AvailebleLawyers[@NumLaw] = @lawyers[i]
+          @NumLaw += 1                                             
+          @check = 1  
+      end   
+    end 
+
+    if @check == 0
+       @IdealLawyer = 0 
+    else 
+      for j in 0..@states.length-1
+
+        if @AvailebleLawyers[0].state == @states[j].name
+
+          save = j
+          break
+        end  
+      end
+
+      for i in 0..@AvailebleLawyers.length-1
+
+        if (@states[save].interaction ).to_i > @AvailebleLawyers.length
+
+          @states[save].interaction = "1"
+        end 
+
+        if @AvailebleLawyers[i].order == @states[save].interaction
+          
+          @IdealLawyer = @AvailebleLawyers[i]
+          break
+        end
+      end 
+  
+      @states[save].interaction = ((@states[save].interaction).to_i + 1).to_s
+    end
   end
+
 
   # GET /clients/new
   def new
