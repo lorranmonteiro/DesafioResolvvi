@@ -5,15 +5,15 @@ application up and running.
 
 Things you may want to cover:
 
-* Ruby version
+* Ruby version 2.5.3
 
 * System dependencies
 
 * Configuration
 
-* Database creation
+* Database creation: PostgreSQL - password = "drogon" (Mudar nas configurações "\config\database.yml")
 
-* Database initialization
+* Database initialization: PostgreSQL
 
 * How to run the test suite
 

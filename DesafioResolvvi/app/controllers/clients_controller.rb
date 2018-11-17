@@ -4,60 +4,62 @@ class ClientsController < ApplicationController
   # GET /clients
   # GET /clients.json
   def index
-    # Recebe todos os clientes que podem ser usados na view index
     @clients = Client.all
-    # Recebe todos os advogados  que podem ser usados na view index
     @lawyers = Lawyer.all
   end
 
   # GET /clients/1
   # GET /clients/1.json
   def show
-    # Recebe todos os advogados que podem ser usados na view show
 	  @lawyers = Lawyer.all
     @states = State.all
 
-    @check = 0
-    @NumLaw = 0
-    @AvailebleLawyers = []
+    @NumLaw = 0                    # Contador de posições do vetor @AvailableLawyers
+    @AvailableLawyers = []
 
     for i in 0..@lawyers.length-1                                    
-      if ((@client.state).upcase).split == (@lawyers[i].state).split    #*clients[0] -> Deve ser o cliente     
-                                                                        # cadastrado       
-          @AvailebleLawyers[@NumLaw] = @lawyers[i]
-          @NumLaw += 1                                             
-          @check = 1  
+      if ((@client.state).upcase).split == (@lawyers[i].state).split    # Verificador Estado do cliente   
+                                                                        #  = Estado do advogado   
+          @AvailableLawyers[@NumLaw] = @lawyers[i]
+          @NumLaw += 1                                              
       end   
     end 
 
-    if @check == 0
+    if @AvailableLawyers.empty?    # Se estiver vazio, retorna 0 e exibe na tela:
+                                   #"Desculpe, não possuímos nenhum advogado cadastrado no seu estado."
        @IdealLawyer = 0 
+                           
     else 
+
       for j in 0..@states.length-1
 
-        if @AvailebleLawyers[0].state == @states[j].name
+        if @AvailableLawyers[0].state == @states[j].name
 
-          save = j
+          save = j                # Salva a posição do estado em questão
           break
+
         end  
       end
 
-      for i in 0..@AvailebleLawyers.length-1
+      for i in 0..@AvailableLawyers.length-1
 
-        if (@states[save].interaction ).to_i > @AvailebleLawyers.length
+        if (@states[save].interaction ).to_i > @AvailableLawyers.length  
 
-          @states[save].interaction = "1"
+          @states[save].interaction = "1"       # Caso o número de interações exceder o limite, dá reset
+
         end 
 
-        if @AvailebleLawyers[i].order == @states[save].interaction
+        if @AvailableLawyers[i].order == @states[save].interaction
           
-          @IdealLawyer = @AvailebleLawyers[i]
+          @IdealLawyer = @AvailableLawyers[i]   # Retorno do advogado na mesma ordem da interação
           break
+
         end
       end 
   
-      @states[save].interaction = ((@states[save].interaction).to_i + 1).to_s
+      @states[save].interaction = ((@states[save].interaction).to_i + 1).to_s # Crescendo a fila
       @states[save].save
+
     end
   end
 
@@ -65,6 +67,7 @@ class ClientsController < ApplicationController
   # GET /clients/new
   def new
     @client = Client.new
+    @states = State.all
   end
 
   # GET /clients/1/edit

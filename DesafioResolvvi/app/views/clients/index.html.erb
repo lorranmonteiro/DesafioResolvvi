@@ -4,7 +4,6 @@
   <h3>Clientes Cadastrados:</h3>
 
   <br>
-  <!-- Tabela de clientes -->
   <table class="table table-bordered">
     <thead>
       <tr>
@@ -18,7 +17,7 @@
       <% @clients.each do |client| %>
         <tr>
           <td><%= client.name %></td>
-          <td><%= (client.state).upcase %></td>
+          <td><%= client.state.upcase %></td>
           <td><%= link_to 'Buscar Advogado Ideal', client %></td>
           <td><%= link_to 'Editar', edit_client_path(client) %></td>
           <td><%= link_to 'Excluir', client, method: :delete, data: { confirm: 'Tem certeza que deseja excluir este cliente?' } %></td>
@@ -27,7 +26,7 @@
     </tbody>
   </table>
 
-   <!-- Cria novo cliente -->
+
   <%= link_to 'Cadastrar Novo Cliente', new_client_path %>
 
   <br><br><br><br>
@@ -36,7 +35,10 @@
 
   <br>
 
-  <!-- Lista de advogados existentes-->
+
+
+  <!-- Lista de advogados existentes para os desenvolvedores testarem! -->
+
   <% @lawyers.each do |lawyer| %>
 
     <li><%= lawyer.name %> --- <%= (lawyer.state).upcase %> ---  Posição na fila: <%= lawyer.order %> 

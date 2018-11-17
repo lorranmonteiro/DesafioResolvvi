@@ -19,12 +19,12 @@
     </div>
 
     <div class="field">
-      <%= form.label "Sigla do seu estado: (ex: CE)" %>
-      <%= form.text_field :state %>
+      <%= form.label "Estado" %>
+      <%= form.select(:state, options_for_select(["AC","AL","AP","AM","BA","CE","DF","ES","GO","MA","MT","MS","MG","PA","PB","PR","PE","PI","RJ","RN","RS","RO","RR","SC","SP","SE","TO"]), {include_blank: '--'}) %>
     </div>
 
     <div class="actions">
-      <%= form.submit %>
+      <%= form.submit "Enviar" %>
     </div>
   <% end %>
 </div>
