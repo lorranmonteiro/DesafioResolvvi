@@ -16,4 +16,4 @@ Diante então, agradeço bastaste pela oportunidade e pela atenção, Arthur! Ta
 
 Grande parte do código está comentada, então deve facilitar a análise.. O front-end é bem simples, nunca mexi com html, mas dei o meu máximo para deixar amigável ao usuário.
 
-Abraço, amigo!
+Forte abraço!
