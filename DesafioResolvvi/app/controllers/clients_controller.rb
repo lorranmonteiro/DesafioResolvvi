@@ -57,6 +57,7 @@ class ClientsController < ApplicationController
       end 
   
       @states[save].interaction = ((@states[save].interaction).to_i + 1).to_s
+      @states[save].save
     end
   end
 
