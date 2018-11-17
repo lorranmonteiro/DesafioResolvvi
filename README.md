@@ -1,14 +1,16 @@
-# Descrição
+# DesafioResolvvi - Lorran Monteiro
 
 Descrição dos arquivos:
 
-"DesafioResolvvi - RubyCode.rb" - Sistema todo feito em Ruby puro para rodar no console
+- "DesafioResolvvi - RubyCode.rb": Sistema todo feito em Ruby puro para rodar no console
 
-"DesafioResolvvi" - Pasta do App implementado ao Rails.
+- "DesafioResolvvi": Pasta do App implementado ao Rails.
 
+#
 
+Database: Postgresql --- Port: 5432 --- username: postgres --- password: drogon
 
-
+#
 
 Diante então, agradeço bastaste pela atenção, Arthur! Também peço desculpas pelo número de e-mails..
 
